@@ -61,25 +61,6 @@ All ~50 individual display toggles are configurable, as well as:
 
 ---
 
-## 🔨 Building from Source
-
-Requirements: **JDK 17**, internet connection (to download Forge MDK dependencies)
-
-```bash
-# Clone / place the project at your desired path
-cd NotEnoughObjectInfo
-
-# Generate IDE run configurations (optional)
-./gradlew genIntellijRuns   # IntelliJ IDEA
-./gradlew genEclipseRuns    # Eclipse
-
-# Build the mod jar
-./gradlew build
-# Output: build/libs/NotEnoughObjectInfo-1.0.0.jar
-```
-
----
-
 ## 📦 Installation
 
 1. Install **Minecraft Forge 1.20.1-47.2.0** (or newer 47.x)
