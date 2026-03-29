@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Not Enough Object Info (NEOI) – Minecraft 1.20.1 Forge Mod</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Not Enough Object Info (NEOI) – a Minecraft 1.20.1 Forge mod that shows detailed, real-time info about blocks, entities, and items." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-badge">Forge • 1.20.1</div>
+      <h1>Not Enough Object Info</h1>
+      <p class="hero-subtitle">Detailed, real-time information about blocks, entities, and items—right on your HUD and in tooltips.</p>
+      <div class="hero-actions">
+        <a href="#features" class="btn primary">Explore Features</a>
+        <a href="#install" class="btn ghost">Installation</a>
+        <a href="https://github.com/your-user/NotEnoughObjectInfo" class="btn ghost" target="_blank" rel="noreferrer">View on GitHub</a>
+      </div>
+      <div class="hero-meta">
+        <span>Mod ID: <code>notenoughobjectinfo</code></span>
+        <span>Author: <strong>EmanuelPlays</strong></span>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <div class="section-header">
+        <h2>✦ Features</h2>
+        <p>HUD overlay and enhanced item tooltips designed for technical players, pack makers, and modded power users.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>HUD Overlay</h3>
+          <p>Look at any block, entity, or held item to see rich, contextual information.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Information Shown</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Blocks</strong></td>
+                  <td>
+                    Name, Registry ID, Mod, Hardness, Blast Resistance, Harvest Tool, Block/Sky Light, Redstone Power,
+                    Flammability, Friction, Block State Properties, Tags, Block Entity type + NBT
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Entities</strong></td>
+                  <td>
+                    Name, Registry ID, Mod, Category, colour-coded Health bar, Max Health, Armor, Movement Speed,
+                    Attack Damage, Active Potion Effects with duration, Position, Dimension, Tags, NBT
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Held Item</strong></td>
+                  <td>
+                    Registry ID, Mod, colour-coded Durability bar, Enchantability, Burn Time, Food Value + Saturation,
+                    Max Stack Size, Tags
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Item Tooltips</h3>
+          <p>Every item tooltip is upgraded with technical metadata and survival-relevant stats.</p>
+          <ul class="bullet-list">
+            <li>Registry ID &amp; source Mod</li>
+            <li>Remaining Durability (%)</li>
+            <li>Enchantability</li>
+            <li>Max Stack Size</li>
+            <li>Burn Time (ticks + seconds)</li>
+            <li>Food Value &amp; Saturation</li>
+            <li>Repair ingredient info</li>
+            <li>NBT summary</li>
+            <li>Item tags</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="keybindings" class="section alt">
+      <div class="section-header">
+        <h2>⌨ Keybindings</h2>
+        <p>All keybindings are configurable in <strong>Options → Controls → Not Enough Object Info</strong>.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>H</code></td>
+              <td>Toggle HUD on/off</td>
+            </tr>
+            <tr>
+              <td><code>J</code></td>
+              <td>Cycle display mode (COMPACT → NORMAL → VERBOSE)</td>
+            </tr>
+            <tr>
+              <td><code>N</code></td>
+              <td>Toggle NBT display</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="display-modes" class="section">
+      <div class="section-header">
+        <h2>📖 Display Modes</h2>
+        <p>Choose how much information you want to see at a glance.</p>
+      </div>
+
+      <div class="mode-toggle">
+        <button class="mode-chip active" data-mode="compact">COMPACT</button>
+        <button class="mode-chip" data-mode="normal">NORMAL</button>
+        <button class="mode-chip" data-mode="verbose">VERBOSE</button>
+      </div>
+
+      <div class="grid three mode-grid">
+        <article class="card mode-card" data-mode-panel="compact">
+          <h3>COMPACT</h3>
+          <p>Name, ID, Mod, and a few key stats only—perfect for minimal HUD setups.</p>
+        </article>
+        <article class="card mode-card" data-mode-panel="normal">
+          <h3>NORMAL (default)</h3>
+          <p>Full standard info without the most verbose fields. Balanced for everyday play.</p>
+        </article>
+        <article class="card mode-card" data-mode-panel="verbose">
+          <h3>VERBOSE</h3>
+          <p>Everything: state properties, tags, NBT, and all attributes for deep debugging.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="config" class="section alt">
+      <div class="section-header">
+        <h2>⚙ Configuration</h2>
+        <p>Fine-tune every aspect of the overlay and tooltip behaviour.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Accessing the config</h3>
+          <ul class="bullet-list">
+            <li>Via <strong>Mod Menu</strong> → <strong>NEOI</strong> → <strong>Config</strong> button</li>
+            <li>Or edit <code>config/neoi-client.toml</code> in your Minecraft instance folder</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Options</h3>
+          <ul class="bullet-list">
+            <li>~50 individual display toggles</li>
+            <li>HUD position (X/Y)</li>
+            <li>Text scale (25–200%)</li>
+            <li>Background transparency</li>
+            <li>Text shadow on/off</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="build" class="section">
+      <div class="section-header">
+        <h2>🔨 Building from Source</h2>
+        <p>Requires <strong>JDK 17</strong> and an internet connection for Forge MDK dependencies.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Gradle commands</h3>
+          <pre class="code-block"><code id="buildCommands">
+# Clone / place the project at your desired path
+cd NotEnoughObjectInfo
+
+# Generate IDE run configurations (optional)
+./gradlew genIntellijRuns   # IntelliJ IDEA
+./gradlew genEclipseRuns    # Eclipse
+
+# Build the mod jar
+./gradlew build
+# Output: build/libs/NotEnoughObjectInfo-1.0.0.jar
+          </code></pre>
+          <button class="btn small" data-copy-target="#buildCommands">Copy commands</button>
+        </article>
+
+        <article class="card">
+          <h3>Tips</h3>
+          <ul class="bullet-list">
+            <li>Use a dedicated Gradle user home for modding projects.</li>
+            <li>Run <code>./gradlew --refresh-dependencies</code> if something looks out of date.</li>
+            <li>Commit <code>gradle.properties</code> and <code>build.gradle</code>, but not <code>.gradle/</code>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="install" class="section alt">
+      <div class="section-header">
+        <h2>📦 Installation</h2>
+        <p>Get NEOI running in your modded Minecraft instance.</p>
+      </div>
+
+      <ol class="steps">
+        <li><strong>Install</strong> Minecraft Forge <code>1.20.1-47.2.0</code> (or newer <code>47.x</code>).</li>
+        <li><strong>Drop</strong> <code>NotEnoughObjectInfo-1.0.0.jar</code> into your <code>mods/</code> folder.</li>
+        <li><strong>Launch</strong> the game—NEOI is ready!</li>
+      </ol>
+    </section>
+
+    <section id="license" class="section">
+      <div class="section-header">
+        <h2>📝 License</h2>
+        <p>Strict attribution and no-derivatives licensing for clear authorship control.</p>
+      </div>
+
+      <article class="card">
+        <p><strong>Copyright © 2026 EmanuelPlays</strong></p>
+        <p>
+          This work is licensed under the
+          <strong>Creative Commons Attribution–NoDerivatives 4.0 International License (CC BY-ND 4.0)</strong>.
+        </p>
+
+        <div class="grid two license-grid">
+          <div>
+            <h3>You are free to:</h3>
+            <ul class="bullet-list">
+              <li>Use, share, and redistribute this mod in any format</li>
+              <li>Include it in modpacks or showcase it publicly</li>
+              <li>Credit the author (<strong>EmanuelPlays</strong>) when sharing</li>
+            </ul>
+          </div>
+          <div>
+            <h3>You may NOT:</h3>
+            <ul class="bullet-list">
+              <li>Modify, edit, translate, or create derivative works based on this mod</li>
+              <li>Repackage or rebrand without explicit permission</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          To request permission for modifications or derivative use, contact the author directly.
+          See full license details at
+          <a href="https://creativecommons.org/licenses/by-nd/4.0" target="_blank" rel="noreferrer">
+            CC BY-ND 4.0
+          </a>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Not Enough Object Info (NEOI) • Minecraft 1.20.1 Forge • © 2026 EmanuelPlays</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
