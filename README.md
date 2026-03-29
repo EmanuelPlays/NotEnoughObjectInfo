@@ -90,6 +90,19 @@ cd NotEnoughObjectInfo
 
 ## 📝 License
 
-MIT — free to use, modify, and redistribute.
+Copyright © 2026 EmanuelPlays
 
-**Author:** EmanuelPlays
+This work is licensed under the Creative Commons Attribution–NoDerivatives 4.0 International License (CC BY-ND 4.0).
+
+You are free to:
+- Use, share, and redistribute this mod in any format
+- Include it in modpacks or showcase it publicly
+- Credit the author (EmanuelPlays) when sharing
+
+You may NOT:
+- Modify, edit, translate, or create derivative works based on this mod
+- Repackage or rebrand without explicit permission
+
+To request permission for modifications or derivative use, contact the author directly.
+
+License details: [https://creativecommons.org/licenses/by-nd/4.0](https://creativecommons.org/licenses/by-nd/4.0)
