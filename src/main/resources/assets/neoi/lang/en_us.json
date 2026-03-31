@@ -1,0 +1,41 @@
+{
+  "key.neoi.toggle_hud":      "Toggle NEOI HUD",
+  "key.neoi.cycle_mode":      "Cycle Display Mode",
+  "key.neoi.toggle_nbt":      "Toggle NBT Display",
+  "key.neoi.toggle_biome":    "Toggle Biome Panel",
+  "key.neoi.toggle_coords":   "Toggle Coordinate Overlay",
+  "key.neoi.toggle_player":   "Toggle Player Stats Panel",
+  "key.neoi.toggle_fluid":    "Toggle Fluid Panel",
+  "key.neoi.next_preset":     "Next Config Preset",
+  "key.categories.neoi":      "Not Enough Object Info",
+
+  "neoi.mode.compact":  "Compact",
+  "neoi.mode.normal":   "Normal",
+  "neoi.mode.verbose":  "Verbose",
+
+  "neoi.panel.block":   "§6§l✦ BLOCK INFO",
+  "neoi.panel.entity":  "§a§l✦ ENTITY INFO",
+  "neoi.panel.fluid":   "§b§l✦ FLUID INFO",
+  "neoi.panel.item":    "§e§l✦ HELD ITEM",
+  "neoi.panel.biome":   "§d§l✦ BIOME INFO",
+  "neoi.panel.coords":  "§7§l✦ COORDINATES",
+  "neoi.panel.player":  "§c§l✦ PLAYER STATS",
+
+  "neoi.hud.disabled":       "§c[NEOI] HUD Disabled",
+  "neoi.hud.enabled":        "§a[NEOI] HUD Enabled",
+  "neoi.mode.changed":       "§a[NEOI] Mode: §f",
+  "neoi.nbt.on":             "§a[NEOI] NBT Display On",
+  "neoi.nbt.off":            "§c[NEOI] NBT Display Off",
+  "neoi.biome.on":           "§a[NEOI] Biome Panel On",
+  "neoi.biome.off":          "§c[NEOI] Biome Panel Off",
+  "neoi.coords.on":          "§a[NEOI] Coordinate Overlay On",
+  "neoi.coords.off":         "§c[NEOI] Coordinate Overlay Off",
+  "neoi.player.on":          "§a[NEOI] Player Stats On",
+  "neoi.player.off":         "§c[NEOI] Player Stats Off",
+  "neoi.preset.loaded":      "§a[NEOI] Preset loaded: §f",
+
+  "command.neoi.help":       "§6[NEOI] Commands: /neoi hud | mode | nbt | biome | coords | preset <name>",
+  "command.neoi.hud_on":     "§a[NEOI] HUD enabled",
+  "command.neoi.hud_off":    "§c[NEOI] HUD disabled",
+  "command.neoi.preset_saved":"§a[NEOI] Preset saved: "
+}
