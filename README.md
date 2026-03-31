@@ -2,8 +2,8 @@
 
 **A Minecraft 1.20.1 Forge mod** — real-time information about blocks, entities, fluids, biomes, items and your own player stats, displayed directly on your HUD and in item tooltips.
 
-![Modrinth](https://img.shields.io/modrinth/dt/HUmWbCY1?logo=modrinth&label=Modrinth)
-![CurseForge](https://img.shields.io/curseforge/dt/1500541?logo=curseforge&label=CurseForge)
+[![neoi](https://modfolio.creeperkatze.de/modrinth/project/neoi)](https://modrinth.com/project/neoi)
+
 
 ---
 
