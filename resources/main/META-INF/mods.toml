@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="CC-BY-ND-4.0"
+
+[[mods]]
+    modId="neoi"
+    version="2.0.0"
+    displayName="Not Enough Object Info"
+    description='''Displays detailed information about blocks, items, entities, fluids, biomes and more.'''
+
+[[dependencies.neoi]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.neoi]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
