@@ -1,6 +1,6 @@
 MIT‑NoMod License
 
-Copyright (c) 2026 EmanuelPlays
+Copyright (©️) 2026 EmanuelPlays
 
 Permission is hereby granted to any person obtaining a copy of this software
 and associated documentation files (the “Software”) to use, copy, and
