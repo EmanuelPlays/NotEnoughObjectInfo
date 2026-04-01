@@ -3,7 +3,7 @@
 **A Minecraft 1.20.1 Forge mod** — real-time information about blocks, entities, fluids, biomes, items and your own player stats, displayed directly on your HUD and in item tooltips.
 
 [![neoi](https://modfolio.creeperkatze.de/modrinth/project/neoi/downloads)](https://modrinth.com/project/neoi) 
-![CurseForge](https://img.shields.io/curseforge/dt/1500541?logo=curseforge&label=CurseForge)
+[![NotEnoughObjectInfo (NEOI)](https://modfolio.creeperkatze.de/curseforge/project/1500541)](https://www.curseforge.com/minecraft/mc-mods/neoi)
 
 
 ---
