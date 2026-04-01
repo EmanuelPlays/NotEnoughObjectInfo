@@ -5,7 +5,7 @@
 
 
 
-Current Status
+
 [![neoi](https://modfolio.creeperkatze.de/modrinth/project/neoi/downloads)](https://modrinth.com/project/neoi) 
 [![NotEnoughObjectInfo (NEOI)](https://modfolio.creeperkatze.de/curseforge/project/1500541)](https://www.curseforge.com/minecraft/mc-mods/neoi)
 
