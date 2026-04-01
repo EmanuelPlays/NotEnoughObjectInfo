@@ -3,7 +3,7 @@ MIT‑NoMod License
 Copyright (©️) 2026 EmanuelPlays
 
 Permission is hereby granted to any person obtaining a copy of this software
-and associated documentation files (the “Software”) to use, copy, and
+and associated documentation files (the “Software/Modification”) to use, copy, and
 distribute the Software for any purpose, including commercial applications,
 subject to the following conditions:
 
@@ -23,4 +23,4 @@ subject to the following conditions:
    authors or copyright holders be liable for any claim, damages, or other
    liability arising from the use of the Software.
 
-By using the Software, you agree to the terms of this license.
+By using the Software/Modification, you agree to the terms of this license.
