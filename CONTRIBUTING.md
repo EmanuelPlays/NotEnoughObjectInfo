@@ -24,7 +24,7 @@ To keep the project stable, readable, and maintainable, please follow the guidel
 
 ## 🧪 Code Standards
 - Follow the existing code style.
-- Keep functions small and focused.
+- There are no mixins
 - Avoid unnecessary dependencies.
 - Document new code where needed.
 - Do not modify licensing headers.
